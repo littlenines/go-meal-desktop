@@ -1,0 +1,43 @@
+// Colors — brand
+$color-primary: #f7a600;
+$color-primary-light: #fcc419;
+$color-primary-dim: #f8b602;
+$color-voucher-start: #f8b602;
+$color-voucher-end: #f0c868;
+
+// Colors — feedback
+$color-danger: #eb5757;
+$color-star: #ffd43b;
+
+// Colors — neutrals
+$color-white: #ffffff;
+$color-black: #1a1a1a;
+$color-bg: #f5f6f8;
+$color-border: #e5e4e7;
+
+// Colors — text
+$color-text: #1e1e1e;
+$color-text-muted: #8a8a8a;
+$color-text-light: #b0b0b0;
+$color-text-dark: #A098AE;
+
+// Typography
+$font-sans: 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+// Spacing
+$spacer: 8px;
+
+// Radius
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+
+// Shadows
+$shadow-light: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+$shadow-dark: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+$shadow-voucher: 0 8px 28px rgba(240, 200, 104, 0.31);
+
+// Gradients
+$gradient-voucher: linear-gradient(135deg, $color-voucher-start 0%, $color-voucher-end 100%);
+$gradient-voucher-glow: linear-gradient(165deg, #f5eeeee3 0%, #f5eeeee3 11%, rgb(213 188 188 / 0%) 100%);;
