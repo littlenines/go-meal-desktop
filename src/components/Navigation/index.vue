@@ -16,16 +16,14 @@ import NavigationVoucher from "@/components/NavigationVoucher/index.vue"
 
 .navigation {
   width: 345px;
-  height: 100vh;
   background-color: $color-white;
-  border-right: 1px solid red;
   text-align: center;
   padding: 56px 46px;
 }
 
 .navigation-title {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: $font-size-2xl;
   margin-bottom: 62px;
 
   span {

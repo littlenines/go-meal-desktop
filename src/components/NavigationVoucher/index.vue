@@ -47,7 +47,7 @@ import Button from "@/components/Button/index.vue";
 
 .navigation-voucher-text {
     text-align: left;
-    font-size: 1.8rem;
+    font-size: $font-size-md;
     color: $color-white;
     margin-bottom: 16px;
 }

@@ -14,7 +14,7 @@
 @use "@/styles/abstracts" as *;
 
 .navigation-list {
-    font-size: 1.8rem;
+    font-size: $font-size-md;
     display: flex;
     flex-direction: column;
     margin-bottom: 56px;

@@ -14,7 +14,7 @@ const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary', f
 @use "@/styles/abstracts" as *;
 
 .button--default {
-    font-size: 1.4rem;
+    font-size: $font-size-sm;
     color: $color-black;
     font-weight: 600;
     padding: 10px 22px;
@@ -23,7 +23,7 @@ const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary', f
 }
 
 .button--primary {
-    font-size: 1.8rem;
+    font-size: $font-size-md;
     color: $color-white;
     padding: 18px 22px;
     background-color: $color-primary-dim;
