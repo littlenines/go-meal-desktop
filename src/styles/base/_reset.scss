@@ -64,4 +64,5 @@ table {
 #app {
   display: flex;
   isolation: isolate;
+  min-height: 100vh;
 }

@@ -20,7 +20,7 @@
     margin-bottom: 56px;
 
     li {
-        border-radius: $radius-xl;
+        border-radius: $radius-md;
         color: $color-text-dark;
 
         &:hover,

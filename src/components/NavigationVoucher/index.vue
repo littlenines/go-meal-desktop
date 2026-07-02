@@ -19,7 +19,7 @@ import Button from "@/components/Button/index.vue";
 
 .navigation-voucher {
     position: relative;
-    border-radius: 22px;
+    border-radius: $radius-lg;
     width: 252px;
     height: 202px;
     overflow: hidden;

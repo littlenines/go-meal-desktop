@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Navigation from "@/components/Navigation/index.vue"
-import Doughnut from "@/components/Doughnut/index.vue"
+import MainVoucher from "@/components/MainVoucher/index.vue"
+import MainCategory from "@/components/MainCategory/index.vue"
+import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
 </script>
 
 <template>
@@ -11,20 +13,12 @@ import Doughnut from "@/components/Doughnut/index.vue"
       <input type="text">
     </section>
 
-    <section class="main-voucher">
-      <div class="main-voucher-text">
-        <h2 class="main-voucher-title">Get Discount Voucher Up To 20% </h2>
-        <p class="main-voucher-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt.</p>
-      </div>
-      <picture class="main-voucher-image">
-        <img src="./assets/woman.png" alt="woman holding two donuts smiling">
-      </picture>
+    <MainVoucher class="mb-40" />
 
-      <Doughnut position="left" />
-      <Doughnut position="top" />
-      <Doughnut position="right" />
-    </section>
+    <MainCategory class="mb-40" />
+
+    <MainPopularDishes class="mb-40" />
+
   </main>
 
   <aside class="checkout"></aside>
@@ -46,41 +40,7 @@ import Doughnut from "@/components/Doughnut/index.vue"
 }
 
 .main-search-greeting {
-  font-size: $font-size-xl;
-}
-
-.main-voucher {
-  position: relative;
-  overflow: hidden;
-  padding: 0px 24px 0px 52px;
-  border-radius: 26px;
-  background-color: $color-primary-dim;
-  color: $color-white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-voucher-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main-voucher-title {
-  max-width: 357px;
-  font-size: $font-size-lg;
-  padding-bottom: 16px;
-}
-
-.main-voucher-subtitle {
-  max-width: 480px;
-  font-size: $font-size-sm;
-  font-weight: 400;
-}
-
-.main-voucher-text,
-.main-voucher-image {
-  z-index: 1;
+  font-size: $font-size-2xl;
 }
 
 .checkout {

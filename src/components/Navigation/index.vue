@@ -23,7 +23,7 @@ import NavigationVoucher from "@/components/NavigationVoucher/index.vue"
 
 .navigation-title {
   font-weight: 700;
-  font-size: $font-size-2xl;
+  font-size: $font-size-3xl;
   margin-bottom: 62px;
 
   span {
