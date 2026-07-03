@@ -7,12 +7,13 @@ import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
 import MainOrders from "@/components/MainOrders/index.vue"
 import MainSearch from "@/components/MainSearch/index.vue"
 
+import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
 </script>
 
 <template>
   <Navigation />
   <Main>
-    <MainSearch class="mb-32"/>
+    <MainSearch class="mb-32" />
 
     <MainVoucher class="mb-40" />
 
@@ -23,7 +24,9 @@ import MainSearch from "@/components/MainSearch/index.vue"
     <MainOrders />
   </Main>
 
-  <aside class="checkout"></aside>
+  <aside class="checkout p-56-46">
+    <CheckoutProfile />
+  </aside>
 </template>
 
 <style lang="scss" scoped>
@@ -32,4 +35,5 @@ import MainSearch from "@/components/MainSearch/index.vue"
 .checkout {
   width: 455px;
 }
+
 </style>

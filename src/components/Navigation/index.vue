@@ -4,7 +4,7 @@ import NavigationVoucher from "@/components/NavigationVoucher/index.vue"
 </script>
 
 <template>
-  <nav class="navigation">
+  <nav class="navigation p-56-46">
     <h1 class="navigation-title">GoMeal<span>.</span></h1>
     <NavigationList/>
     <NavigationVoucher/>
@@ -18,7 +18,6 @@ import NavigationVoucher from "@/components/NavigationVoucher/index.vue"
   width: 345px;
   background-color: $color-white;
   text-align: center;
-  padding: 56px 46px;
 }
 
 .navigation-title {
