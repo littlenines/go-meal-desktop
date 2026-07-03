@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Box from "@/components/Box/index.vue"
 import Button from "@/components/Button/index.vue"
+import LikeButton from "@/components/LikeButton/index.vue"
 import Plus from "../svg/Plus.vue";
 import Price from "@/components/Price/index.vue"
 import rate from "@/assets/rate.png"
@@ -14,7 +15,7 @@ defineProps<{ social: ImageSource, mainImage: ImageSource, mainImageAlt: string,
             <p>15% Off</p>
         </div>
 
-        <img class="popular-social" width="24" height="24" :src="social" alt="heart">
+        <LikeButton :icon="social" />
 
         <div class="popular-images">
             <div class="popular-image-placeholder">
@@ -48,11 +49,6 @@ defineProps<{ social: ImageSource, mainImage: ImageSource, mainImageAlt: string,
     font-size: $font-size-md;
     color: $color-white;
     border-radius: 0 $radius-sm $radius-sm 0;
-}
-
-.popular-social {
-    position: absolute;
-    right: 32px;
 }
 
 .popular-images {

@@ -3,6 +3,8 @@ import Navigation from "@/components/Navigation/index.vue"
 import MainVoucher from "@/components/MainVoucher/index.vue"
 import MainCategory from "@/components/MainCategory/index.vue"
 import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
+import MainOrders from "@/components/MainOrders/index.vue"
+
 </script>
 
 <template>
@@ -19,6 +21,7 @@ import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
 
     <MainPopularDishes class="mb-40" />
 
+    <MainOrders />
   </main>
 
   <aside class="checkout"></aside>
