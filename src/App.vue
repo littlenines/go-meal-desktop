@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navigation from "@/components/Navigation/index.vue"
+import Main from "@/components/Main/index.vue"
 import MainVoucher from "@/components/MainVoucher/index.vue"
 import MainCategory from "@/components/MainCategory/index.vue"
 import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
@@ -10,7 +11,7 @@ import MainSearch from "@/components/MainSearch/index.vue"
 
 <template>
   <Navigation />
-  <main class="main">
+  <Main>
     <MainSearch class="mb-32"/>
 
     <MainVoucher class="mb-40" />
@@ -20,19 +21,13 @@ import MainSearch from "@/components/MainSearch/index.vue"
     <MainPopularDishes class="mb-40" />
 
     <MainOrders />
-  </main>
+  </Main>
 
   <aside class="checkout"></aside>
 </template>
 
 <style lang="scss" scoped>
 @use "@/styles/abstracts" as *;
-
-.main {
-  background-color: $color-bg;
-  flex: 1;
-  padding: 56px 40px;
-}
 
 .checkout {
   width: 455px;
