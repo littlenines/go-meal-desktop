@@ -15,8 +15,7 @@ const { name = "Wick" } = defineProps<{ name?: string }>();
 @use "@/styles/abstracts" as *;
 
 .main-search {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
 }
 
 .main-search-greeting {

@@ -18,9 +18,7 @@ const { viewAllLink = '#' } = defineProps<{ title: string, viewAllLink?: string 
 @use "@/styles/abstracts" as *;
 
 .view-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between(center);
 }
 
 .view-text-label {

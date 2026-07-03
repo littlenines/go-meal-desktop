@@ -17,9 +17,7 @@ defineProps<{ image: ImageSource, alt: string, label: string }>()
 @use "@/styles/abstracts" as *;
 
 .category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column($align: center);
 }
 
 .category-title {

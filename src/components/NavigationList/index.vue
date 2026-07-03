@@ -15,8 +15,7 @@
 
 .navigation-list {
     font-size: $font-size-md;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin-bottom: 56px;
 
     li {

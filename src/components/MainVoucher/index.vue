@@ -25,8 +25,7 @@ import Doughnut from "@/components/Doughnut/index.vue"
 
 .main-voucher {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
   overflow: hidden;
   padding: 0px 24px 0px 52px;
   border-radius: $radius-xl;
@@ -35,9 +34,7 @@ import Doughnut from "@/components/Doughnut/index.vue"
 }
 
 .main-voucher-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column($justify: center);
 }
 
 .main-voucher-title {

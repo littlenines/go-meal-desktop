@@ -17,7 +17,7 @@ defineProps<{ placeholder?: string }>()
 .search-input {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: $spacing-sm;
     width: 513px;
     padding: 16px 28px;
     border-radius: $radius-md;

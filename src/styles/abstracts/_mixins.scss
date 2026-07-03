@@ -1,0 +1,25 @@
+@mixin flex-between($align: null) {
+  display: flex;
+  justify-content: space-between;
+
+  @if $align {
+    align-items: $align;
+  }
+}
+
+@mixin flex-column($align: null, $justify: null, $gap: 0) {
+  display: flex;
+  flex-direction: column;
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $gap !=0 {
+    gap: $gap;
+  }
+}
