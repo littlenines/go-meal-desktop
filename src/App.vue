@@ -8,6 +8,7 @@ import MainOrders from "@/components/MainOrders/index.vue"
 import MainSearch from "@/components/MainSearch/index.vue"
 
 import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
+import Balance from "@/components/Balance/index.vue";
 </script>
 
 <template>
@@ -25,7 +26,9 @@ import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
   </Main>
 
   <aside class="checkout p-56-46">
-    <CheckoutProfile />
+    <CheckoutProfile class="mb-32" />
+
+    <Balance class="mb-32" />
   </aside>
 </template>
 

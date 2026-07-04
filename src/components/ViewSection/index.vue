@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const { viewAllLink = '#' } = defineProps<{ title: string, viewAllLink?: string }>();
+const { viewAllLink = '#', hasLink = true } = defineProps<{ title: string, hasLink?: boolean, viewAllLink?: string }>();
 </script>
 
 <template>
     <section>
         <div class="view-text mb-24">
             <h3 class="view-text-label">{{ title }}</h3>
-            <a :href="viewAllLink" class="view-text-all">View all <span>></span></a>
+            <a v-if="hasLink" :href="viewAllLink" class="view-text-all">View all <span>></span></a>
         </div>
         <div class="view-content">
             <slot />
