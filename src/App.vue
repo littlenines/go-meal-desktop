@@ -9,6 +9,7 @@ import MainSearch from "@/components/MainSearch/index.vue"
 
 import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
 import Balance from "@/components/Balance/index.vue";
+import Address from "@/components/Address/index.vue";
 </script>
 
 <template>
@@ -29,6 +30,8 @@ import Balance from "@/components/Balance/index.vue";
     <CheckoutProfile class="mb-32" />
 
     <Balance class="mb-32" />
+
+    <Address class="mb-32" />
   </aside>
 </template>
 

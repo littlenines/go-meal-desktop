@@ -6,5 +6,5 @@ type BalanceActionItem = { icon: Component; label: string }
 
 export const balanceActions: BalanceActionItem[] = [
     { icon: Income, label: "Top Up" },
-    { icon: Profit, label: "Top Up" },
+    { icon: Profit, label: "Transfer" },
 ]

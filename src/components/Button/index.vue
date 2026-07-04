@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary' | 'icon', fullWidth?: boolean }>()
+const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary' | 'icon' | 'outline-primary' | 'outline-default', fullWidth?: boolean }>()
 
 </script>
 
@@ -30,6 +30,22 @@ const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary' | 
     color: $color-white;
     padding: 18px 22px;
     background-color: $color-primary-dim;
+}
+
+.button--outline-primary {
+    font-size: 1.4rem;
+    color: $color-primary-dim;
+    border: 1px solid $color-primary-dim;
+    padding: 4px 18px;
+    background-color: transparent;
+}
+
+.button--outline-default {
+    font-size: 1.4rem;
+    color: $color-black-light;
+    border: 1px solid $color-text-dark;
+    padding: 4px 18px;
+    background-color: transparent;
 }
 
 .button--icon {
