@@ -1,17 +1,9 @@
-.mb-40 {
-  margin-bottom: 40px;
-}
+$mb-values: 16, 24, 32, 40;
 
-.mb-16 {
-  margin-bottom: 16px;
-}
-
-.mb-24 {
-  margin-bottom: 24px;
-}
-
-.mb-32 {
-  margin-bottom: 32px;
+@each $value in $mb-values {
+  .mb-#{$value} {
+    margin-bottom: #{$value}px;
+  }
 }
 
 .p-56-46 {
