@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import Price from "@/components/Price/index.vue"
 
-defineProps<{ image: ImageSource; alt: string; label: string; quantity: string | number; price: string | number }>()
+defineProps<{ mainImage: ImageSource; mainImageAlt: string; label: string; quantity: string | number; price: string | number }>()
 </script>
 
 <template>
     <li class="order-item">
         <div class="order-item-info">
             <picture class="order-item-info-image">
-                <img :src="image" :alt="alt">
+                <img :src="mainImage" :alt="mainImageAlt">
             </picture>
 
             <div class="order-item-info-quantity">
@@ -29,9 +29,7 @@ defineProps<{ image: ImageSource; alt: string; label: string; quantity: string |
 }
 
 .order-item-info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    @include flex-row(center, $spacing-md);
 }
 
 .order-item-info-image {

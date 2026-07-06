@@ -15,9 +15,7 @@ defineProps<{ placeholder?: string }>()
 @use "@/styles/abstracts" as *;
 
 .search-input {
-    display: flex;
-    align-items: center;
-    gap: $spacing-sm;
+    @include flex-row(center, $spacing-sm);
     width: 513px;
     padding: 16px 28px;
     border-radius: $radius-md;

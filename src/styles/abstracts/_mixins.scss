@@ -1,3 +1,15 @@
+@mixin flex-row($align: null, $gap: 0) {
+  display: flex;
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
 @mixin flex-between($align: null) {
   display: flex;
   justify-content: space-between;

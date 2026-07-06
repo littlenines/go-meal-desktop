@@ -29,7 +29,8 @@ defineProps<{ icon: Component; label: string }>()
 .balance-action-badge {
     border-radius: $radius-md;
     background-color: $color-white;
+    color: $color-black-light;
     padding: 12px;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-md;
 }
 </style>

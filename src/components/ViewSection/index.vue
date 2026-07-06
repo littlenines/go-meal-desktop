@@ -32,8 +32,6 @@ const { viewAllLink = '#', hasLink = true } = defineProps<{ title: string, hasLi
 }
 
 .view-content {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    @include flex-row(center, $spacing-md);
 }
 </style>

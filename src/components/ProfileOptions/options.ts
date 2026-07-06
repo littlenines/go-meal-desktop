@@ -8,7 +8,7 @@ type ProfileOption = {
     notify?: boolean;
 };
 
-export const ProfileOptionItems: ProfileOption[] = [
+export const profileOptionItems: ProfileOption[] = [
     { icon: Dashboard, notify: true },
     { icon: Bell, notify: true },
     { icon: Settings },

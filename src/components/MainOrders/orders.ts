@@ -13,7 +13,7 @@ type OrderItem = {
     time: string | number
 }
 
-export const OrderItems: OrderItem[] = [
+export const orderItems: OrderItem[] = [
     {
         mainImage: pizza,
         mainImageAlt: "pizza",

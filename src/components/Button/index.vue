@@ -33,20 +33,21 @@ const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary' | 
     border-radius: $radius-md;
 }
 
-.button--outline-primary {
-    font-size: 1.4rem;
-    color: $color-primary-dim;
-    border: 1px solid $color-primary-dim;
+.button--outline-primary,
+.button--outline-default {
+    font-size: $font-size-sm;
     padding: 4px 18px;
     background-color: transparent;
 }
 
+.button--outline-primary {
+    color: $color-primary-dim;
+    border: 1px solid $color-primary-dim;
+}
+
 .button--outline-default {
-    font-size: 1.4rem;
     color: $color-black-light;
     border: 1px solid $color-text-dark;
-    padding: 4px 18px;
-    background-color: transparent;
 }
 
 .button--icon {

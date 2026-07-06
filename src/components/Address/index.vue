@@ -30,21 +30,21 @@ import Button from "@/components/Button/index.vue"
 }
 
 .address-title {
-    margin-bottom: 8px;
+    margin-bottom: $spacing-sm;
 }
 
 .address-street {
     @include flex-between(center);
-    margin-bottom: 8px;
+    margin-bottom: $spacing-sm;
 
     h4 {
         font-size: $font-size-md;
-        display: flex;
-        align-items: center;
+        @include flex-row(center);
         color: $color-black-light;
 
         span {
-            margin-right: 8px;
+            margin-right: $spacing-sm;
+            color: $color-primary-dim;
         }
     }
 }
@@ -52,11 +52,10 @@ import Button from "@/components/Button/index.vue"
 .address-description {
     font-size: $font-size-sm;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-md;
 }
 
 .address-actions {
-    display: flex;
-    gap: 16px;
+    @include flex-row($gap: $spacing-md);
 }
 </style>

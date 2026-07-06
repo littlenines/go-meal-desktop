@@ -7,7 +7,7 @@ import fishIcon from "@/assets/svg/Fish.svg";
 
 type CategoryItem = { image: ImageSource; alt: string; label: string };
 
-export const CategoryItems: CategoryItem[] = [
+export const categoryItems: CategoryItem[] = [
   { image: bakedIcon, alt: "muffin", label: "Bakery" },
   { image: burgerIcon, alt: "burger", label: "Burger" },
   { image: coffeeIcon, alt: "coffee", label: "Beverage" },

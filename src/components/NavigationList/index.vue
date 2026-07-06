@@ -1,10 +1,10 @@
 <script setup lang="ts">
-    import { NavigationItems } from './list';
+    import { navigationItems } from './list';
 </script>
 
 <template>
     <ul class="navigation-list">
-        <li v-for="value in NavigationItems" :key="value.label" :class="{ active: value.active }">
+        <li v-for="value in navigationItems" :key="value.label" :class="{ active: value.active }">
             <a :href="value.href"><component :is="value.icon" /> {{ value.label }}</a>
         </li>
     </ul>
@@ -31,13 +31,11 @@
 
     li a {
         padding: 12px 24px;
-        display: flex;
-        align-items: center;
-        gap: 24px;
+        @include flex-row(center, 24px);
     }
 
     li:not(:last-child) {
-        margin-bottom: 16px;
+        margin-bottom: $spacing-md;
     }
 }
 </style>

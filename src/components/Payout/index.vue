@@ -21,13 +21,12 @@ import Button from "@/components/Button/index.vue"
 @use "@/styles/abstracts" as *;
 
 .payout {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    @include flex-column($gap: 32px);
 }
 
 .payout-coupon {
     @include flex-between(center);
+    color: $color-black-light;
     background-color: $color-bg;
     border: 1px solid $color-primary-dim;
     border-radius: $radius-md;
@@ -37,7 +36,7 @@ import Button from "@/components/Button/index.vue"
 
 .payout-coupon-svg {
     padding: 4px;
-    border-radius: 12px;
+    border-radius: $radius-icon-badge;
     background-color: $color-primary-dim;
 }
 

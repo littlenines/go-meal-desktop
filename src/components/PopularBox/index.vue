@@ -4,11 +4,11 @@ import Button from "@/components/Button/index.vue"
 import Plus from "../svg/Plus.vue";
 import rate from "@/assets/rate.png"
 
-defineProps<{ social: ImageSource, mainImage: ImageSource, mainImageAlt: string, label: string, price: number | string }>()
+defineProps<{ likeIcon: ImageSource, mainImage: ImageSource, mainImageAlt: string, label: string, price: number | string }>()
 </script>
 
 <template>
-    <DishCard :like-icon="social" :main-image="mainImage" :main-image-alt="mainImageAlt" :label="label" :price="price">
+    <DishCard :like-icon="likeIcon" :main-image="mainImage" :main-image-alt="mainImageAlt" :label="label" :price="price">
         <template #badge>
             <div class="popular-discount">
                 <p>15% Off</p>

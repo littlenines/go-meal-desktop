@@ -14,7 +14,7 @@ type NavItem = {
     active?: boolean;
 }
 
-export const NavigationItems: NavItem[] = [
+export const navigationItems: NavItem[] = [
     { label: "Dashboard", icon: DashboardSvg, href: "", active: true },
     { label: "Food Order", icon: FoodOrder, href: "" },
     { label: "Favorite", icon: Favorite, href: "" },
