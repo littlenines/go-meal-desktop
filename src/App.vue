@@ -11,6 +11,7 @@ import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
 import Balance from "@/components/Balance/index.vue";
 import Address from "@/components/Address/index.vue";
 import OrderMenu from "@/components/OrderMenu/index.vue";
+import Divider from "@/components/Divider/index.vue";
 </script>
 
 <template>
@@ -34,7 +35,9 @@ import OrderMenu from "@/components/OrderMenu/index.vue";
 
     <Address class="mb-32" />
 
-    <OrderMenu />
+    <OrderMenu class="mb-80" />
+
+    <Divider />
   </aside>
 </template>
 

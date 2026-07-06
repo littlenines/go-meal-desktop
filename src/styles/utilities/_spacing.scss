@@ -1,4 +1,4 @@
-$mb-values: 16, 24, 32, 40;
+$mb-values: 16, 24, 32, 40, 80;
 
 @each $value in $mb-values {
   .mb-#{$value} {
