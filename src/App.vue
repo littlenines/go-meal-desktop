@@ -6,18 +6,12 @@ import MainCategory from "@/components/MainCategory/index.vue"
 import MainPopularDishes from "@/components/MainPopularDishes/index.vue"
 import MainOrders from "@/components/MainOrders/index.vue"
 import MainSearch from "@/components/MainSearch/index.vue"
-
-import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
-import Balance from "@/components/Balance/index.vue";
-import Address from "@/components/Address/index.vue";
-import OrderMenu from "@/components/OrderMenu/index.vue";
-import Divider from "@/components/Divider/index.vue";
-import Total from "@/components/Total/index.vue";
-import Payout from "@/components/Payout/index.vue";
+import Checkout from "@/components/Checkout/index.vue"
 </script>
 
 <template>
   <Navigation />
+  
   <Main>
     <MainSearch class="mb-32" />
 
@@ -30,28 +24,5 @@ import Payout from "@/components/Payout/index.vue";
     <MainOrders />
   </Main>
 
-  <aside class="checkout p-56-46">
-    <CheckoutProfile class="mb-32" />
-
-    <Balance class="mb-32" />
-
-    <Address class="mb-32" />
-
-    <OrderMenu class="mb-80" />
-
-    <Divider class="mb-32" />
-
-    <Total class="mb-40" />
-
-    <Payout />
-  </aside>
+  <Checkout />
 </template>
-
-<style lang="scss" scoped>
-@use "@/styles/abstracts" as *;
-
-.checkout {
-  width: 455px;
-}
-
-</style>
