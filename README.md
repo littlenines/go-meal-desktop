@@ -4,7 +4,7 @@ A food delivery dashboard UI, built as a practice project for learning **Vue 3**
 
 This is a static front-end recreation of a Figma design — no backend, no real data, no routing. The goal was hands-on practice with Vue 3 fundamentals: props, slots, `v-for`, component composition/extraction, and scoped SCSS with shared variables/mixins.
 
-![GoMeal design](./gomeal-design.png)
+![GoMeal design](https://github.com/littlenines/go-meal-desktop/blob/8ed4515631d1e8fdb3e84f91d05da14235d9e00b/src/assets/gomeal-design.png)
 
 ## Tech stack
 
