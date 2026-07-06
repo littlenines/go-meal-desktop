@@ -27,7 +27,6 @@ import Button from "@/components/Button/index.vue"
 .address {
     font-size: $font-size-md;
     color: $color-text-dark;
-    margin-bottom: 8px;
 }
 
 .address-title {

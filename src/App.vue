@@ -10,6 +10,7 @@ import MainSearch from "@/components/MainSearch/index.vue"
 import CheckoutProfile from "@/components/CheckoutProfile/index.vue";
 import Balance from "@/components/Balance/index.vue";
 import Address from "@/components/Address/index.vue";
+import OrderMenu from "@/components/OrderMenu/index.vue";
 </script>
 
 <template>
@@ -32,6 +33,8 @@ import Address from "@/components/Address/index.vue";
     <Balance class="mb-32" />
 
     <Address class="mb-32" />
+
+    <OrderMenu />
   </aside>
 </template>
 
