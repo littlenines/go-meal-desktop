@@ -30,6 +30,7 @@ const { variant = 'default' } = defineProps<{ variant?: 'default' | 'primary' | 
     color: $color-white;
     padding: 18px 22px;
     background-color: $color-primary-dim;
+    border-radius: $radius-md;
 }
 
 .button--outline-primary {

@@ -12,6 +12,8 @@ import Balance from "@/components/Balance/index.vue";
 import Address from "@/components/Address/index.vue";
 import OrderMenu from "@/components/OrderMenu/index.vue";
 import Divider from "@/components/Divider/index.vue";
+import Total from "@/components/Total/index.vue";
+import Payout from "@/components/Payout/index.vue";
 </script>
 
 <template>
@@ -37,7 +39,11 @@ import Divider from "@/components/Divider/index.vue";
 
     <OrderMenu class="mb-80" />
 
-    <Divider />
+    <Divider class="mb-32" />
+
+    <Total class="mb-40" />
+
+    <Payout />
   </aside>
 </template>
 

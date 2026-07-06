@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Price from "@/components/Price/index.vue"
+
 defineProps<{ image: ImageSource; alt: string; label: string; quantity: string | number; price: string | number }>()
 </script>
 
@@ -15,7 +17,7 @@ defineProps<{ image: ImageSource; alt: string; label: string; quantity: string |
             </div>
         </div>
 
-        <p class="order-price">+<span>$</span>{{ price }}</p>
+        <Price size="md" emphasis :weight="600" prefix="+">{{ price }}</Price>
     </li>
 </template>
 
@@ -55,13 +57,4 @@ defineProps<{ image: ImageSource; alt: string; label: string; quantity: string |
     }
 }
 
-.order-price {
-    font-size: $font-size-md;
-    font-weight: 600;
-    color: $color-black-light;
-
-    span {
-        color: $color-primary-dim;
-    }
-}
 </style>
